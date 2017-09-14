@@ -17,7 +17,7 @@ def get_distance(trigger_pin = TRIG, echo_pin = ECHO):
     GPIO.setup(trigger_pin, GPIO.OUT)
     GPIO.setup(echo_pin, GPIO.IN)
 
-    print ("Using BCM Mode, Trigger on GPIO ", trigger_pin, " and Echo on GPIO ", echo_pin)
+    print ("Using BCM Mode, Trigger on GPIO {0} and  Echo on GPIO {1}".format(trigger_pin, echo_pin))
 
     # Stop transmission already going on, if any
     GPIO.output(trigger_pin, False)
@@ -58,5 +58,5 @@ def cleanup():
 if __name__ == "__main__":
 
     print ("Distance Measurement In Progress")
-    print ("Distance:", get_distance(TRIG, ECHO), " cm")
+    print ("Distance: {0} cm".format(get_distance(TRIG, ECHO)))
     cleanup()
