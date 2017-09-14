@@ -23,7 +23,7 @@ def send_dweet(data = dweet_data, thing_name = Dweet_Thing_Name):
     return r
 
 
-if __name__ == __main__:
+if __name__ == "__main__":
     try:
         print ("Dweeting various sensor readings")
 
