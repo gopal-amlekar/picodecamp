@@ -8,6 +8,8 @@ ECHO = 3
 #Function block to measure Distance
 def get_distance(trigger_pin = TRIG, echo_pin = ECHO):
 
+    GPIO.setwarnings(False)
+
     # Use BCM Mode for pin numbering
     GPIO.setmode(GPIO.BCM)
 
@@ -50,8 +52,11 @@ def get_distance(trigger_pin = TRIG, echo_pin = ECHO):
 
     return distance
 
+def cleanup():
+    GPIO.cleanup()
+
 if __name__ == "__main__":
 
     print ("Distance Measurement In Progress")
     print ("Distance:", get_distance(TRIG, ECHO), " cm")
-    GPIO.cleanup()
+    cleanup()
