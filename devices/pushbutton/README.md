@@ -42,3 +42,10 @@ python button.py
 ```
 
 This will print the initial state of the switch either pressed or released and then it will monitor the switch forever until the code execution is terminated with Control + C. Every time you press the switch or release it, the code will print the button state on terminal.
+
+```
+Button is Pressed
+Button is Released
+[...]
+Button is Pressed
+```
