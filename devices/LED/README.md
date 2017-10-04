@@ -2,6 +2,8 @@
 
 Blinking an LED connected to Raspberry Pi is one of the most basic experiments in the world of physical computing. This involves switching a GPIO pin high and low.
 
+Here is a quick guide to blink an LED with Raspberry Pi.
+
 #### Hardware
 
 Wire up the circuit as shown below.
@@ -31,8 +33,8 @@ For example, the LED blinking code when using RPi.GPIO needs calls to switch ON 
 The code included here uses RPi.GPIO. More code samples will be added later using the gpiozero library.
 
 The sample programs available for LED are:
-
 1. [blink-LED-rpi-gpio.py](blink-LED-rpi-gpio.py)
+
 
 ###### Notes
 **How to identify the anode and cathode of LED**
@@ -49,3 +51,5 @@ Usually the anode is longer lead of the LED and cathode is the shorter lead. How
 - Connect the leads of multi-meter to the LED.
 - The LED will light up only if the positive lead of multi-meter gets connected to anode and negative lead to cathode.
 - Beware that when testing LED in this way, the intensity of LED light is quite low so you need to observe it in little darkness by covering it with your hands.
+
+ For additional information about LED, have a look at this file [LED-Info.md](LED-Info.md).
