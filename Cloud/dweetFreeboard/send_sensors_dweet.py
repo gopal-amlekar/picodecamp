@@ -1,11 +1,13 @@
 import sys
-sys.path.append('../../')
+sys.path.append('../../')   # Must follow the folder structure or else change the path
 
 import time
-import requests # This must be installed with pip install requests (or pip3 for python 3)
+import requests # This must be installed with `pip3 install requests`
+
+# Must follow the folder structure and file name as hcsr04.py for ultrasonic distance sensor
 from devices.distancesensors import hcsr04
 
-Dweet_Thing_Name = "RaspiDweets"
+Dweet_Thing_Name = ""       # Use some unique name 
 
 Dweet_Base_URL = "https://dweet.io/dweet/for/"
 Dweet_For_URL = Dweet_Base_URL + Dweet_Thing_Name + "?"
